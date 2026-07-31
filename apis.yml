@@ -1,8 +1,28 @@
 aid: modern-fertility
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/modern-fertility.png
 name: Modern Fertility
-description: 'Modern Fertility is a company surfaced as a portfolio company of union-square-ventures,
-  y-combinator and added to the API Evangelist network as a stub for enrichment. Sector: health. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Modern Fertility is a women's health company offering at-home fertility and
+  hormone testing along with pregnancy, ovulation and prenatal products. Its
+  flagship Modern Fertility Hormone Test lets people measure reproductive
+  hormones from home and review results with providers. The company was
+  acquired by telehealth provider Ro and is now operated as part of Ro:
+  modernfertility.com redirects to ro.co/fertility and the brand's products,
+  accounts, legal terms and security program are served under the parent Ro
+  platform. Modern Fertility exposes no public developer or API surface; this
+  profile tracks it as a consumer health brand within the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/modern-fertility/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,21 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: ro
+x-brand-home: https://ro.co/fertility/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Health
+- Fertility
+- Women's Health
+- Hormone Testing
+- Diagnostics
+- Telehealth
+- Consumer Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +55,26 @@ maintainers:
 common:
 - type: Website
   url: https://modernfertility.com
+- type: Blog
+  url: https://ro.co/blog/articles/
+- type: Support
+  url: https://ro.co/faq/
+- type: TermsOfService
+  url: https://ro.co/terms-of-use/
+- type: PrivacyPolicy
+  url: https://ro.co/privacy-policy/
+- type: DomainSecurity
+  url: security/modern-fertility-domain-security.yml
+- type: SecurityTxt
+  url: well-known/modern-fertility-security.txt
+- type: WellKnown
+  url: well-known/modern-fertility-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/modern-fertility-vulnerability-disclosure.yml
+- type: Security
+  url: https://hackerone.com/ro
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1

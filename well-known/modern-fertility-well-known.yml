@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: live /.well-known probes of modernfertility.com and its parent host ro.co
+note: >-
+  modernfertility.com 301-redirects to ro.co/fertility; the Modern Fertility
+  brand is now served under the parent Ro domain. The brand domain itself
+  publishes no /.well-known documents, but the parent ro.co host publishes a
+  RFC 9116 security.txt that governs the Modern Fertility surface.
+hosts:
+- host: https://modernfertility.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+- host: https://ro.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: modern-fertility-security.txt
+    inherited_from_parent: true
